@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:layout_margin="10dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:background="@android:color/holo_red_light">
+
+        <ImageView
+            android:layout_marginLeft="10px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/caution_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Caution"
+            android:paddingLeft="20px"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/cancel_dialog" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Your Keyboard has been locked On Offensive Word Usage"
+        android:layout_margin="25dp"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/security"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:inputType="number"
+        android:hint="Enter Security Code"/>
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:layout_margin="20px"/>
+
+</LinearLayout>
